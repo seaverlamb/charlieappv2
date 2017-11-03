@@ -1,0 +1,2757 @@
+Last login: Fri Nov  3 13:05:54 on ttys000
+Seavers-MacBook-Pro:~ seaverlam$ cd projects
+Seavers-MacBook-Pro:projects seaverlam$ cd skeleton
+Seavers-MacBook-Pro:skeleton seaverlam$ cd nokogiri
+Seavers-MacBook-Pro:nokogiri seaverlam$ ruby webcrawler.rb
+
+From: /Users/seaverlam/projects/skeleton/nokogiri/webcrawler.rb @ line 11 :
+
+     6:
+     7: page = HTTParty.get('http://www.laanimalservices.com/looking-for-a-dog/')
+     8:
+     9: parse_page = Nokogiri::HTML(page)
+    10:
+ => 11: Pry.start(binding)
+
+[1] pry(main)> parse_page
+=> #(Document:0x3ff6af132b18 {
+  name = "document",
+  children = [
+    #(DTD:0x3ff6af142bd0 { name = "html" }),
+    #(Element:0x3ff6af13a32c {
+      name = "html",
+      attributes = [ #(Attr:0x3ff6af136e98 { name = "lang", value = "en-US" })],
+      children = [
+        #(Text "\r\n"),
+        #(Element:0x3ff6af0f6938 {
+          name = "head",
+          children = [
+            #(Text "\r\n"),
+            #(Element:0x3ff6aec4e368 {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6aec0b9dc {
+                  name = "src",
+                  value = "http://globalnav.lacity.org/global_nav_2.0.js"
+                  })]
+              }),
+            #(Text " \r\n"),
+            #(Element:0x3ff6af20fc98 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af20b918 { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af20b904 { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af20b8f0 { name = "href", value = "../assets/css/storelocator.css" })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af817a3c {
+              name = "meta",
+              attributes = [ #(Attr:0x3ff6af816394 { name = "charset", value = "UTF-8" })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af1ba6a8 {
+              name = "title",
+              children = [ #(Text "Looking for a dog | Los Angeles Animal Services")]
+              }),
+            #(Text "\r\n    \r\n"),
+            #(Element:0x3ff6af1a265c {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6af19f448 {
+                  name = "src",
+                  value = "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+                  })]
+              }),
+            #(Text "\r\n\r\n"),
+            #(Element:0x3ff6af437d18 {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6af436454 {
+                  name = "src",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/js/superfish.js"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Comment "<script src=\"http://www.laanimalservices.com/wp-content/themes/laas/js/jquery.tabify.js\"></script>"),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af15b478 {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6af15a0f0 {
+                  name = "src",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/js/laas.js"
+                  })]
+              }),
+            #(Text "\r\n\r\n"),
+            #(Element:0x3ff6af0c093c {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6af091e5c {
+                  name = "src",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/js/jquery-ui.js"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af099170 {
+              name = "script",
+              attributes = [
+                #(Attr:0x3ff6af0ca43c {
+                  name = "src",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/js/tabs2.js"
+                  })]
+              }),
+            #(Text "\r\n    \r\n"),
+            #(Element:0x3ff6aec59fc4 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6aec58908 { name = "rel", value = "profile" }),
+                #(Attr:0x3ff6aec588f4 { name = "href", value = "http://gmpg.org/xfn/11" })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af12ee14 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af1dfa98 { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af1dfa84 { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af1dfa70 { name = "media", value = "all" }),
+                #(Attr:0x3ff6af1dfa5c {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/reset.css"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af1b3ec0 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af1b32b8 { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af1b32a4 { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af1b3290 { name = "media", value = "all" }),
+                #(Attr:0x3ff6af1b327c {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/laas.css"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af41a024 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af183b58 { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af183a7c { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af183a68 { name = "media", value = "all" }),
+                #(Attr:0x3ff6af183a40 {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/css/superfish.css"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af0ff948 {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af0fa8a8 { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af0fa7e0 { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af0fa7b8 { name = "media", value = "all" }),
+                #(Attr:0x3ff6af0fa72c {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/css/animate.css"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Element:0x3ff6af2031dc {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af2025fc { name = "rel", value = "stylesheet" }),
+                #(Attr:0x3ff6af2025e8 { name = "type", value = "text/css" }),
+                #(Attr:0x3ff6af2025d4 { name = "media", value = "all" }),
+                #(Attr:0x3ff6af2025c0 {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/laasecond.css"
+                  })]
+              }),
+            #(Text "\r\n"),
+            #(Comment "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"http://www.laanimalservices.com/wp-content/themes/laas/css/tabs2.css\" />"),
+            #(Text "\r\n\r\n"),
+            #(Element:0x3ff6af1ba66c {
+              name = "link",
+              attributes = [
+                #(Attr:0x3ff6af1b7624 { name = "rel", value = "shortcut icon" }),
+                #(Attr:0x3ff6af1b75e8 {
+                  name = "href",
+                  value = "http://www.laanimalservices.com/wp-content/themes/laas/favicon.ico"
+                  })]
+              }),
+            #(Text "\r\n\r\n"),
+            #(Element:0x3ff6af18a214 {
+              name = "script",
+              attributes = [ #(Attr:0x3ff6af442268 { name = "type", value = "text/javascript" })],
+              children = [
+                #(CDATA "\r\n// <![CDATA[\r\n    jQuery(function(){\r\n         // This initializes the Superfish menu.\r\n         jQuery('ul.sf-menu').superfish();\r\n     });\r\n// ]]>\r\n")]
+              }),
+            #(Text "\r\n\r\n"),
+            #(Comment "Popup Window for Survey Monkey\r\n<script>\r\nfunction popupCenter(url, title, w, h) {\r\nvar left = (screen.width/2)-(w/2);\r\nvar top = (screen.height/2)-(h/2);\r\nreturn window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);\r\n} \r\n</script>"),
+            #(Text "\r\n\r\n")]
+          }),
+        #(Text "\r\n\r\n"),
+        #(Element:0x3ff6af153d04 {
+          name = "body",
+          children = [
+            #(Text "\r\n"),
+            #(Element:0x3ff6af13ad7c {
+              name = "div",
+              attributes = [
+                #(Attr:0x3ff6af42a460 { name = "id", value = "wrapper" }),
+                #(Attr:0x3ff6af42a44c { name = "class", value = "hfeed" })],
+              children = [
+                #(Text "\r\n\t"),
+                #(Element:0x3ff6af0b5e74 {
+                  name = "div",
+                  attributes = [ #(Attr:0x3ff6aec46dac { name = "id", value = "header" })],
+                  children = [
+                    #(Text "\r\n\t\t"),
+                    #(Element:0x3ff6aec5841c {
+                      name = "div",
+                      attributes = [ #(Attr:0x3ff6af823378 { name = "id", value = "masthead" })],
+                      children = [
+                        #(Text "\r\n\t\t\r\n        "),
+                        #(Element:0x3ff6af1f2558 {
+                          name = "div",
+                          attributes = [
+                            #(Attr:0x3ff6af12f6fc { name = "id", value = "headimg" })],
+                          children = [
+                            #(Text "\r\n\t\t\t\t\t\t\t\t\t\t\t"),
+                            #(Element:0x3ff6af81a7dc {
+                              name = "img",
+                              attributes = [
+                                #(Attr:0x3ff6af817384 {
+                                  name = "src",
+                                  value = "http://www.laanimalservices.com/wp-content/uploads/2012/11/cropped-logolaas.png"
+                                  }),
+                                #(Attr:0x3ff6af817370 { name = "width", value = "940" }),
+                                #(Attr:0x3ff6af81735c { name = "height", value = "140" }),
+                                #(Attr:0x3ff6af817348 {
+                                  name = "alt",
+                                  value = "City of Los Angeles Department of Animal Services Banner"
+                                  }),
+                                #(Attr:0x3ff6af817334 {
+                                  name = "title",
+                                  value = "City of Los Angeles Department of Animal Services Banner"
+                                  })]
+                              }),
+                            #(Text "\r\n\t\t\t\t\t        \r\n        ")]
+                          }),
+                        #(Comment "#headimg"),
+                        #(Text "\r\n\r\n\t\t\t\t\t\t\t\t"),
+                        #(Element:0x3ff6af156c98 {
+                          name = "div",
+                          attributes = [
+                            #(Attr:0x3ff6af153d68 { name = "id", value = "navwrap" }),
+                            #(Attr:0x3ff6af153d54 { name = "class", value = "menu-header" })],
+                          children = [
+                            #(Element:0x3ff6af0f6690 {
+                              name = "ul",
+                              attributes = [
+                                #(Attr:0x3ff6af0f28b0 { name = "id", value = "menu-main" }),
+                                #(Attr:0x3ff6af0f289c { name = "class", value = "sf-menu" })],
+                              children = [
+                                #(Element:0x3ff6af20e118 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af20b3c8 {
+                                      name = "id",
+                                      value = "menu-item-430"
+                                      }),
+                                    #(Attr:0x3ff6af20b3b4 {
+                                      name = "class",
+                                      value = "menu-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-430"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1cb78c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1cb318 {
+                                          name = "title",
+                                          value = "laas home"
+                                          }),
+                                        #(Attr:0x3ff6af1cb994 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/"
+                                          })],
+                                      children = [ #(Text "Home")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af192a90 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af18e648 {
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page :
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page m:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+                                  }),
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+                                  }),
+:
+                                      name = "id",
+                                      value = "menu-item-454"
+                                      }),
+                                    #(Attr:0x3ff6af18e60c {
+                                      name = "class",
+                                      value = "menu-visit menu-item menu-item-type-post_type menu-item-object-page menu-item-454"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af16296c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af15e5d8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/shelters/"
+                                          })],
+                                      children = [ #(Text "Visit")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af0efbb0 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af08fe04 {
+                                      name = "id",
+                                      value = "menu-item-458"
+                                      }),
+                                    #(Attr:0x3ff6af08fd64 {
+                                      name = "class",
+                                      value = "menu-calendar menu-item menu-item-type-post_type menu-item-object-page menu-item-458"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af1de6fc {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1d7c6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/calendar/"
+                                          })],
+                                      children = [ #(Text "Calendar")]
+                                      })]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af41fc2c {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af41e818 {
+                                      name = "id",
+                                      value = "menu-item-436"
+                                      }),
+                                    #(Attr:0x3ff6af41e804 {
+                                      name = "class",
+                                      value = "menu-adopt menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-436"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af0c6788 {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6aec4ee6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/adopt/"
+                                          })],
+                                      children = [ #(Text "Adopt")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af19b870 {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6af19a6dc {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af44e310 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1d31e4 {
+                                              name = "id",
+                                              value = "menu-item-441"
+                                              }),
+                                            #(Attr:0x3ff6af1d31d0 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-441"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af20b594 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af20a9c8 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/adopt/adoption-fees/"
+                                                  })],
+                                              children = [ #(Text "Adoption Fees/Policy")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1c7fd8 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1c7268 {
+                                              name = "id",
+                                              value = "menu-item-2001"
+                                              }),
+                                            #(Attr:0x3ff6af1c7254 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-2001"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1971d0 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af193e7c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/adopt/finding-a-companion/"
+                                                  })],
+                                              children = [ #(Text "Adoptable Pet Search")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af14f9fc {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af14a68c {
+                                              name = "id",
+                                              value = "menu-item-682"
+                                              }),
+                                            #(Attr:0x3ff6af14a678 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-682"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6aec478d8 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6aec46140 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/adopt/introducing-companions/"
+                                                  })],
+                                              children = [ #(Text "Introducing companions")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1fe894 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1f7314 {
+                                              name = "id",
+                                              value = "menu-item-443"
+                                              }),
+                                            #(Attr:0x3ff6af1f7300 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-443"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af44b6c4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af44a940 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/adopt/animal-id-search/"
+                                                  })],
+                                              children = [ #(Text "Animal ID Search")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af43e3c0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af43ad4c {
+                                              name = "id",
+                                              value = "menu-item-520"
+                                              }),
+                                            #(Attr:0x3ff6af43ad38 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-520"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af13a6b0 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af42a578 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/adopt/seniors/"
+                                                  })],
+                                              children = [ #(Text "Seniors")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af06e4c0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af04aca0 {
+                                              name = "id",
+                                              value = "menu-item-2154"
+                                              }),
+                                            #(Attr:0x3ff6af04a6ec {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-2154"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1df674 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1de9a4 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/shelter-search/"
+                                                  })],
+                                              children = [ #(Text "Search by Shelter")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af19f344 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af19e160 {
+                                      name = "id",
+                                      value = "menu-item-447"
+                                      }),
+                                    #(Attr:0x3ff6af19e14c {
+                                      name = "class",
+                                      value = "menu-aboutus menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-447"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af167958 {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af166c10 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-us-2/"
+                                          })],
+                                      children = [ #(Text "About Us")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af102a44 {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6af0fbab4 {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6aec5dbb0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec5c8dc {
+                                              name = "id",
+                                              value = "menu-item-451"
+                                              }),
+                                            #(Attr:0x3ff6aec5c878 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-451"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1d30a4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1d2668 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/contact-us/"
+                                                  })],
+                                              children = [ #(Text "Contact Us")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1abb94 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1aa730 {
+                                              name = "id",
+                                              value = "menu-item-450"
+                                              }),
+                                            #(Attr:0x3ff6af1aa708 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-450"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af166cc4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af163c68 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/commission/"
+                                                  })],
+                                              children = [ #(Text "Commission")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af08ee50 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af0ca8b0 {
+                                              name = "id",
+                                              value = "menu-item-463"
+                                              }),
+                                            #(Attr:0x3ff6af0ca860 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-463"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af206c74 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af2060e4 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/smart/"
+                                                  })],
+                                              children = [ #(Text "Specialized Mobile Animal Rescue Team")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af44f620 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af44e2d4 {
+                                              name = "id",
+                                              value = "menu-item-452"
+                                              }),
+                                            #(Attr:0x3ff6af44e298 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-452"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af43fb30 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af43e6e0 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/department-press-releases/"
+                                                  })],
+                                              children = [ #(Text "Press Releases")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af137488 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af132d98 {
+                                              name = "id",
+                                              value = "menu-item-3135"
+                                              }),
+                                            #(Attr:0x3ff6af132d70 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-3135"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af05a2b8 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af046e34 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/blog/"
+                                                  })],
+                                              children = [ #(Text "Notes from the GM")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1d604c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1d2d84 {
+                                              name = "id",
+                                              value = "menu-item-449"
+                                              }),
+                                            #(Attr:0x3ff6af1d2d70 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-449"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1b29f8 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6aec54f4c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/careers/"
+                                                  })],
+                                              children = [ #(Text "Careers")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af167ad4 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af16665c {
+                                              name = "id",
+                                              value = "menu-item-474"
+                                              }),
+                                            #(Attr:0x3ff6af16660c {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-474"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af0f3b0c {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af0f2270 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/statistics/"
+                                                  })],
+                                              children = [ #(Text "Statistics")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af207e44 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af207200 {
+                                              name = "id",
+                                              value = "menu-item-478"
+                                              }),
+                                            #(Attr:0x3ff6af2071ec {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-478"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af816a60 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af81609c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-us-2/requests-for-proposals/"
+                                                  })],
+                                              children = [ #(Text "Requests for Proposals")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af18a750 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af4426a0 {
+                                              name = "id",
+                                              value = "menu-item-480"
+                                              }),
+                                            #(Attr:0x3ff6af442678 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-480"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af13ffd4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af13eea4 {
+                                                  name = "href",
+                                                  value = "http://eng.lacity.org/projects/animal_bond/index.htm"
+                                                  })],
+                                              children = [ #(Text "Animal facilities bond")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af822b08 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af81f534 {
+                                      name = "id",
+                                      value = "menu-item-481"
+                                      }),
+                                    #(Attr:0x3ff6af81f4d0 {
+                                      name = "class",
+                                      value = "menu-petcare menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-481"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af453eb4 {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af4525c8 {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/about-animals/"
+                                          })],
+                                      children = [ #(Text "Pet care")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6aec54bc8 {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1afe38 {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af41beec {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af41b49c {
+                                              name = "id",
+                                              value = "menu-item-524"
+                                              }),
+                                            #(Attr:0x3ff6af41b488 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-524"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af41789c {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af12a940 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/spay-neuter/"
+                                                  })],
+                                              children = [ #(Text "Spay & Neuter")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1fe718 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1f61f8 {
+                                              name = "id",
+                                              value = "menu-item-515"
+                                              }),
+                                            #(Attr:0x3ff6af1f61e4 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-515"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af442b78 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af43b558 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/microchipping/"
+                                                  })],
+                                              children = [ #(Text "Microchipping")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af033adc {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec33fb8 {
+                                              name = "id",
+                                              value = "menu-item-526"
+                                              }),
+                                            #(Attr:0x3ff6aec33f04 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-526"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af43e5c8 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af4374f8 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/vaccinations/"
+                                                  })],
+                                              children = [ #(Text "Vaccinations")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1f20e4 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec60fb8 {
+                                              name = "id",
+                                              value = "menu-item-514"
+                                              }),
+                                            #(Attr:0x3ff6aec60f90 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-514"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1de724 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1db09c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-animals/lost-pet/"
+                                                  })],
+                                              children = [ #(Text "Lost Pet")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1b3754 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1b22a0 {
+                                              name = "id",
+                                              value = "menu-item-3052"
+                                              }),
+                                            #(Attr:0x3ff6af1b2264 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-3052"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af41ec14 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af41e23c {
+                                                  name = "href",
+                                                  value = "/about-animals/?cats"
+                                                  })],
+                                              children = [ #(Text "Cats")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af12ada0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af126afc {
+                                              name = "id",
+                                              value = "menu-item-3053"
+                                              }),
+                                            #(Attr:0x3ff6af126ae8 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3053"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6aec610bc {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6aec60900 {
+                                                  name = "href",
+                                                  value = "/about-animals/?dogs"
+                                                  })],
+                                              children = [ #(Text "Dogs")]
+                                              }),
+                                            #(Text "\n\t"),
+                                            #(Element:0x3ff6af1cbcf0 {
+                                              name = "ul",
+                                              attributes = [
+                                                #(Attr:0x3ff6af813fb8 {
+                                                  name = "class",
+                                                  value = "sub-menu"
+                                                  })],
+                                              children = [
+                                                #(Text "\n\t\t"),
+                                                #(Element:0x3ff6aec55be0 {
+                                                  name = "li",
+                                                  attributes = [
+                                                    #(Attr:0x3ff6aec547a4 {
+                                                      name = "id",
+                                                      value = "menu-item-518"
+                                                      }),
+                                                    #(Attr:0x3ff6aec54790 {
+                                                      name = "class",
+                                                      value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-518"
+                                                      })],
+                                                  children = [
+                                                    #(Element:0x3ff6af1866c8 {
+                                                      name = "a",
+                                                      attributes = [
+                                                        #(Attr:0x3ff6af1821cc {
+                                                          name = "href",
+                                                          value = "http://www.laanimalservices.com/about-animals/dogs/preventing-dog-bites/"
+                                                          })],
+                                                      children = [ #(Text "Preventing Dog Bites")]
+                                                      })]
+                                                  }),
+                                                #(Text "\n\t")]
+                                              }),
+                                            #(Text "\n")]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6aec0b400 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec03174 {
+                                              name = "id",
+                                              value = "menu-item-3054"
+                                              }),
+                                            #(Attr:0x3ff6aec030ac {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-3054"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1dfcb4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1df1b0 {
+                                                  name = "href",
+                                                  value = "/about-animals/?rabbits"
+                                                  })],
+                                              children = [ #(Text "Rabbits & Pocket Pets")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1b7958 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1b3f4c {
+                                              name = "id",
+                                              value = "menu-item-509"
+                                              }),
+                                            #(Attr:0x3ff6af1b3f38 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-509"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af422cec {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af41fed4 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/emergency-preparedness/"
+                                                  })],
+                                              children = [ #(Text "Emergency Preparedness")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af0db458 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af417428 {
+                                              name = "id",
+                                              value = "menu-item-4133"
+                                              }),
+                                            #(Attr:0x3ff6af41725c {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-4133"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6aec61f80 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6aec611c0 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/planningforpets/"
+                                                  })],
+                                              children = [
+                                                #(Text "Planning for Pets if you can’t be there for them")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1cbfd4 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1cab5c {
+                                              name = "id",
+                                              value = "menu-item-512"
+                                              }),
+                                            #(Attr:0x3ff6af1cab20 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-512"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1a7828 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1a3d2c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/hot-weather-tips/"
+                                                  })],
+                                              children = [ #(Text "Hot Weather Tips")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af16ef8c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af167818 {
+                                              name = "id",
+                                              value = "menu-item-513"
+                                              }),
+                                            #(Attr:0x3ff6af1677dc {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-513"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af0fe570 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af0f63c0 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/household-hazards/"
+                                                  })],
+                                              children = [ #(Text "Household Hazards")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af2076c4 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af2069e0 {
+                                              name = "id",
+                                              value = "menu-item-516"
+                                              }),
+                                            #(Attr:0x3ff6af2069cc {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-516"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1c7fb0 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1c7588 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/pet-friendly-housing/"
+                                                  })],
+                                              children = [ #(Text "Pet Friendly Housing")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af18ed64 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af18ba38 {
+                                              name = "id",
+                                              value = "menu-item-492"
+                                              }),
+                                            #(Attr:0x3ff6af18ba24 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-492"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af156928 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af153c00 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/about-animals/wildlife/"
+                                                  })],
+                                              children = [ #(Text "Wildlife")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6aec4243c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec3a778 {
+                                              name = "id",
+                                              value = "menu-item-508"
+                                              }),
+                                            #(Attr:0x3ff6aec3a73c {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-508"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af12eeb4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1e2068 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/general-information/deceased-animal/"
+                                                  })],
+                                              children = [ #(Text "Deceased Animal")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af19ff38 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af19e82c {
+                                      name = "id",
+                                      value = "menu-item-527"
+                                      }),
+                                    #(Attr:0x3ff6af19e804 {
+                                      name = "class",
+                                      value = "menu-policies menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-527"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af17fd8c {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af177c2c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/laws-policies/"
+                                          })],
+                                      children = [ #(Text "Policies")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af11b1fc {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6af10ba90 {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af02b9cc {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af012634 {
+                                              name = "id",
+                                              value = "menu-item-533"
+                                              }),
+                                            #(Attr:0x3ff6af0125a8 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-533"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1d2c58 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1d20a0 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/animal-licenses/"
+                                                  })],
+                                              children = [ #(Text "Animal Licenses")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1aaa14 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af19f7f4 {
+                                              name = "id",
+                                              value = "menu-item-529"
+                                              }),
+                                            #(Attr:0x3ff6af19f7b8 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-529"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af16e44c {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af167994 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/permits/"
+                                                  })],
+                                              children = [ #(Text "Permits")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af0ef598 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af08f4f4 {
+                                              name = "id",
+                                              value = "menu-item-530"
+                                              }),
+                                            #(Attr:0x3ff6af08ef54 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-530"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af206814 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af203574 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/spayneuter-ordinance/"
+                                                  })],
+                                              children = [ #(Text "Spay/Neuter Ordinance")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af44e860 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af44b64c {
+                                              name = "id",
+                                              value = "menu-item-528"
+                                              }),
+                                            #(Attr:0x3ff6af44b5e8 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-528"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af43e104 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af43af18 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/nuisance-barking/"
+                                                  })],
+                                              children = [ #(Text "Nuisance Barking")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af13a69c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1376e0 {
+                                              name = "id",
+                                              value = "menu-item-507"
+                                              }),
+                                            #(Attr:0x3ff6af1376cc {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-507"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af087664 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af082038 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/dangerous-animals/"
+                                                  })],
+                                              children = [ #(Text "Dangerous Animals")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1b3330 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1aebdc {
+                                              name = "id",
+                                              value = "menu-item-531"
+                                              }),
+                                            #(Attr:0x3ff6af1ae9ac {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-531"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af0f6820 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af0ef1b0 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/administrative-hearing/"
+                                                  })],
+                                              children = [ #(Text "Administrative Hearing")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af16e0a0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af166db4 {
+                                              name = "id",
+                                              value = "menu-item-532"
+                                              }),
+                                            #(Attr:0x3ff6af166da0 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-532"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1d26a4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1cf60c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/animal-cruelty/"
+                                                  })],
+                                              children = [ #(Text "Animal Cruelty")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af2068f0 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af20313c {
+                                              name = "id",
+                                              value = "menu-item-534"
+                                              }),
+                                            #(Attr:0x3ff6af203100 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-534"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1c65ac {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af44f4f4 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/laws-policies/chained-dog-laws/"
+                                                  })],
+                                              children = [ #(Text "Chained Dog Laws")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af41a934 {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af1862a4 {
+                                      name = "id",
+                                      value = "menu-item-535"
+                                      }),
+                                    #(Attr:0x3ff6af18627c {
+                                      name = "class",
+                                      value = "menu-volunteer menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-535"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af417fb8 {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af41621c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/volunteer/"
+                                          })],
+                                      children = [ #(Text "Volunteer")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af012044 {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6aec60be4 {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af12fc88 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af12ef68 {
+                                              name = "id",
+                                              value = "menu-item-537"
+                                              }),
+                                            #(Attr:0x3ff6af12ef54 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-537"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1be26c {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af4478bc {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/volunteer/new-hope/"
+                                                  })],
+                                              children = [ #(Text "New Hope")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af41ffd8 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af41aeac {
+                                              name = "id",
+                                              value = "menu-item-540"
+                                              }),
+                                            #(Attr:0x3ff6af41ae84 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-540"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af127c90 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af123f14 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/volunteer/foster-program/"
+                                                  })],
+                                              children = [ #(Text "Foster Program")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6aec587c8 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af823788 {
+                                              name = "id",
+                                              value = "menu-item-4298"
+                                              }),
+                                            #(Attr:0x3ff6af823774 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-4298"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1ce644 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1cb854 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/volunteer/playgroups/"
+                                                  })],
+                                              children = [ #(Text "Playgroups")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n"),
+                                #(Element:0x3ff6af437b9c {
+                                  name = "li",
+                                  attributes = [
+                                    #(Attr:0x3ff6af433f4c {
+                                      name = "id",
+                                      value = "menu-item-542"
+                                      }),
+                                    #(Attr:0x3ff6af433e98 {
+                                      name = "class",
+                                      value = "menu-donate menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-542"
+                                      })],
+                                  children = [
+                                    #(Element:0x3ff6af13ada4 {
+                                      name = "a",
+                                      attributes = [
+                                        #(Attr:0x3ff6af42ac6c {
+                                          name = "href",
+                                          value = "http://www.laanimalservices.com/donate/"
+                                          })],
+                                      children = [ #(Text "Donate")]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6aec0b8d8 {
+                                      name = "ul",
+                                      attributes = [
+                                        #(Attr:0x3ff6aec036b0 {
+                                          name = "class",
+                                          value = "sub-menu"
+                                          })],
+                                      children = [
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af2066ac {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af202f5c {
+                                              name = "id",
+                                              value = "menu-item-544"
+                                              }),
+                                            #(Attr:0x3ff6af202f48 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-544"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1c6cf0 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1c605c {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/donate/gift-certificates/"
+                                                  })],
+                                              children = [ #(Text "Gift Certificates")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af433c7c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af432c78 {
+                                              name = "id",
+                                              value = "menu-item-545"
+                                              }),
+                                            #(Attr:0x3ff6af432c3c {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-545"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1375dc {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af133568 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/donate/kennel-sponsorship/"
+                                                  })],
+                                              children = [ #(Text "Kennel Sponsorship")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af046d6c {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af016a40 {
+                                              name = "id",
+                                              value = "menu-item-548"
+                                              }),
+                                            #(Attr:0x3ff6af0169f0 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-548"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af1da0ac {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af1d7488 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/donate/wills-and-bequests/"
+                                                  })],
+                                              children = [ #(Text "Wills and Bequests")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6aec54f38 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6aec54254 {
+                                              name = "id",
+                                              value = "menu-item-2228"
+                                              }),
+                                            #(Attr:0x3ff6aec54240 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-post_type menu-item-object-page menu-item-2228"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af16ed98 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af167b10 {
+                                                  name = "href",
+                                                  value = "http://www.laanimalservices.com/donate/wish-list/"
+                                                  })],
+                                              children = [ #(Text "Wish List")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af0eeef4 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af0d6e58 {
+                                              name = "id",
+                                              value = "menu-item-3055"
+                                              }),
+                                            #(Attr:0x3ff6af0d6e30 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-3055"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af20a694 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af207ac0 {
+                                                  name = "href",
+                                                  value = "https://www.dmv.ca.gov/online/elp/elp.htm"
+                                                  })],
+                                              children = [ #(Text "Pet Lovers Plates")]
+                                              })]
+                                          }),
+                                        #(Text "\n\t"),
+                                        #(Element:0x3ff6af1c71c8 {
+                                          name = "li",
+                                          attributes = [
+                                            #(Attr:0x3ff6af1c61b0 {
+                                              name = "id",
+                                              value = "menu-item-3057"
+                                              }),
+                                            #(Attr:0x3ff6af1c6188 {
+                                              name = "class",
+                                              value = "menu-item menu-item-type-custom menu-item-object-custom menu-item-3057"
+                                              })],
+                                          children = [
+                                            #(Element:0x3ff6af18a1c4 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6af442880 {
+                                                  name = "href",
+                                                  value = "http://kuranda.com/donate/5621"
+                                                  })],
+                                              children = [ #(Text "Donate a Kuranda Bed")]
+                                              })]
+                                          }),
+                                        #(Text "\n")]
+                                      }),
+                                    #(Text "\n")]
+                                  }),
+                                #(Text "\n")]
+                              })]
+                          }),
+                        #(Text "  \t\t")]
+                      }),
+                    #(Comment " #masthead "),
+                    #(Text "\r\n\t")]
+                  }),
+                #(Comment " #header "),
+                #(Text "\r\n"),
+                #(Element:0x3ff6aec61f1c { name = "br" }),
+                #(Text "\r\n"),
+                #(Element:0x3ff6af81f214 {
+                  name = "style",
+                  children = [
+                    #(CDATA "\r\np.foster1 {\r\n    font: bold 13px arial, sans-serif;\r\n    color: blue;\r\n    align-content: left;\r\n}\r\n")]
+                  }),
+                #(Text "\r\n\r\n"),
+                #(Comment "<div style=\"padding:15px;\">\r\n<font color=red><b>Urgent need for adopters and fosters NOW. Our shelters are full as we prepare to provide care and shelter for animals being evacuated from the La Tuna Canyon fire.</b></font>\r\n</div>"),
+                #(Text "\r\n"),
+                #(Element:0x3ff6af1db9d4 {
+                  name = "link",
+                  attributes = [
+                    #(Attr:0x3ff6af1d7ab4 { name = "rel", value = "stylesheet" }),
+                    #(Attr:0x3ff6af1d7aa0 { name = "type", value = "text/css" }),
+                    #(Attr:0x3ff6af1d7a8c { name = "media", value = "all" }),
+                    #(Attr:0x3ff6af1d7a78 {
+                      name = "href",
+                      value = "http://www.laanimalservices.com/wp-content/themes/laas/laassecond.css"
+                      })]
+                  }),
+                #(Text "\r\n\r\n\t"),
+                #(Element:0x3ff6af19e37c {
+                  name = "div",
+                  attributes = [ #(Attr:0x3ff6af19b1b8 { name = "id", value = "main" })],
+                  children = [
+                    #(Text "\r\n\r\n\t\t"),
+                    #(Element:0x3ff6af41e750 {
+                      name = "div",
+                      attributes = [
+                        #(Attr:0x3ff6af41bb68 { name = "id", value = "container" }),
+                        #(Attr:0x3ff6af41bb54 { name = "class", value = "one-column" })],
+                      children = [
+                        #(Text "\r\n        \r\n         \r\n        \r\n\t\t\t"),
+                        #(Element:0x3ff6af4261e4 {
+                          name = "div",
+                          attributes = [
+                            #(Attr:0x3ff6af0bff8c { name = "id", value = "contentani" }),
+                            #(Attr:0x3ff6af0bfeec { name = "role", value = "main" })],
+                          children = [
+                            #(Text "\r\n            \r\n         "),
+                            #(Comment "   <div id=\"fb-root\"></div>\r\n<script src=\"http://connect.facebook.net/en_US/all.js#xfbml=1\"></script><fb:like href=\"http://www.laanimalservices.com/looking-for-a-dog/\" show_faces=\"true\" width=\"450\"></fb:like>"),
+                            #(Text "\r\n            \r\n\t\t\t\n\n\t\t\t\t"),
+                            #(Element:0x3ff6aec58aac {
+                              name = "div",
+                              attributes = [
+                                #(Attr:0x3ff6af823c38 { name = "id", value = "post-566" }),
+                                #(Attr:0x3ff6af823c24 {
+                                  name = "class",
+                                  value = "post-566 page type-page status-publish hentry"
+                                  })],
+                              children = [
+                                #(Text "  \n\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t"),
+                                #(Element:0x3ff6af1cf328 {
+                                  name = "div",
+                                  attributes = [
+                                    #(Attr:0x3ff6af1cb9f8 {
+                                      name = "class",
+                                      value = "entry-content"
+                                      })],
+                                  children = [
+                                    #(Text "\n\t\t\t\t\t\t"),
+                                    #(Element:0x3ff6af1ba964 {
+                                      name = "div",
+                                      attributes = [
+                                        #(Attr:0x3ff6af1b76b0 {
+                                          name = "id",
+                                          value = "top_container"
+                                          }),
+                                        #(Attr:0x3ff6af1b769c {
+                                          name = "style",
+                                          value = "width:98%;border:1px solid white;margin-left:10px;"
+                                          })],
+                                      children = [
+                                        #(Text "\n"),
+                                        #(Element:0x3ff6af16f7ac {
+                                          name = "h1",
+                                          attributes = [
+                                            #(Attr:0x3ff6af167930 {
+                                              name = "class",
+                                              value = "blue"
+                                              })],
+                                          children = [ #(Text "Pet Search – Dogs")]
+                                          }),
+                                        #(Text "\n"),
+                                        #(Element:0x3ff6af0f275c {
+                                          name = "p",
+                                          children = [
+                                            #(Element:0x3ff6aec4e570 {
+                                              name = "a",
+                                              attributes = [
+                                                #(Attr:0x3ff6aec47cc0 {
+                                                  name = "href",
+                                                  value = "/adopt/finding-a-companion/"
+                                                  })],
+                                              children = [ #(Text "Adoptable Pet Search")]
+                                              }),
+                                            #(Text "\n")]
+                                          })]
+                                      }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af1b3808 { name = "p" }),
+                                    #(Text "\n"),
+                                    #(Element:0x3ff6af41eebc {
+                                      name = "p",
+                                      children = [
+                                        #(Element:0x3ff6af1662ec {
+                                          name = "iframe",
+                                          attributes = [
+                                            #(Attr:0x3ff6af15e560 {
+                                              name = "id",
+                                              value = "showAni"
+                                              }),
+                                            #(Attr:0x3ff6af15e54c {
+                                              name = "frameborder",
+                                              value = "0"
+                                              }),
+                                            #(Attr:0x3ff6af15e538 {
+                                              name = "title",
+                                              value = "Looking for a dog"
+                                              }),
+                                            #(Attr:0x3ff6af15e524 {
+                                              name = "src",
+                                              value = "http://www.petharbor.com/results.asp?searchtype=ADOPT&where=type_dog&SHELTERLIST='LACT','LACT1','LACT4','LACT3','LACT2','LACT5','LACT6'&stylesheet=http://www.laanimalservices.com/wp-content/themes/laas/laasph.css&friends=1&nosuccess=1&page=1&imght=120&imgres=detail&view=sysadm.v_lact&orderby=located at&nomax=1"
+                                              }),
+                                            #(Attr:0x3ff6af15e4fc {
+                                              name = "class",
+                                              value = "wholepage"
+                                              })],
+                                          children = [ #(Text " ")]
+                                          })]
+                                      }),
+                                    #(Text "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")]
+                                  }),
+                                #(Comment " .entry-content "),
+                                #(Text "\n\t\t\t\t")]
+                              }),
+                            #(Comment " #post-## "),
+                            #(Text "\n\n\t\t\t\t\r\n\t\t\t"),
+                            #(Element:0x3ff6af81f8cc {
+                              name = "div",
+                              attributes = [
+                                #(Attr:0x3ff6af457870 { name = "id", value = "comments" })],
+                              children = [
+                                #(Text "\r\n\r\n\r\n\t"),
+                                #(Element:0x3ff6af1dbba0 {
+                                  name = "p",
+                                  attributes = [
+                                    #(Attr:0x3ff6af1d7cbc {
+                                      name = "class",
+                                      value = "nocomments"
+                                      })],
+                                  children = [ #(Text "Comments are closed.")]
+                                  }),
+                                #(Text "\r\n\r\n\r\n\r\n")]
+                              }),
+                            #(Comment " #comments "),
+                            #(Text "\r\n\n\r\n\t\t\t")]
+                          }),
+                        #(Comment " #content "),
+                        #(Text "\r\n\t\t")]
+                      }),
+                    #(Comment " #container "),
+                    #(Text "\r\n\r\n\r\n\r\n")]
+                  }),
+                #(Comment " #main "),
+                #(Text "\r\n\r\n\r\n")]
+              }),
+            #(Comment " #wrapper "),
+            #(Text "\r\n\r\n\r\n\r\n\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n"),
+            #(Comment " #main "),
+            #(Text "\r\n\r\n\r\n"),
+            #(Comment " #wrapper "),
+            #(Text "\r\n\r\n\r\n\r\n\t"),
+            #(Element:0x3ff6af0c1238 {
+              name = "div",
+              attributes = [ #(Attr:0x3ff6af0914e8 { name = "id", value = "footer" })],
+              children = [
+                #(Text "\r\n   \t  "),
+                #(Element:0x3ff6af0d7100 {
+                  name = "div",
+                  attributes = [ #(Attr:0x3ff6af0c7390 { name = "class", value = "fwrapper" })],
+                  children = [
+                    #(Text "\r\n        "),
+                    #(Element:0x3ff6af02214c {
+                      name = "div",
+                      attributes = [
+                        #(Attr:0x3ff6aec61e04 { name = "class", value = "citylogo" })],
+                      children = [
+                        #(Text "\r\n        \t"),
+                        #(Element:0x3ff6af202ca0 {
+                          name = "a",
+                          attributes = [
+                            #(Attr:0x3ff6af2020ac {
+                              name = "href",
+                              value = "http://www.lacity.org"
+                              }),
+                            #(Attr:0x3ff6af20205c { name = "target", value = "_new" })],
+                          children = [ #(Text "City of Los Angeles")]
+                          }),
+                        #(Text "\r\n        ")]
+                      }),
+                    #(Text "\r\n               \r\n        "),
+                    #(Element:0x3ff6af4471b4 {
+                      name = "div",
+                      attributes = [ #(Attr:0x3ff6af1bb508 { name = "id", value = "fcol" })],
+                      children = [
+                        #(Text "\r\n        "),
+                        #(Element:0x3ff6af197bbc {
+                          name = "div",
+                          attributes = [
+                            #(Attr:0x3ff6af193d78 { name = "class", value = "shelterLocation" })],
+                          children = [
+                            #(Text "\r\n      Department of Animal Services"),
+                            #(Element:0x3ff6af41af38 { name = "br" }),
+                            #(Text "\r\n221 N. Figueroa Street, 6th Floor, Suite 600, Los Angeles, CA 90012 (888) 452-7381"),
+                            #(Element:0x3ff6af15e290 { name = "br" }),
+                            #(Text "\r\n\t  Administrative Office Hours: Monday - Friday (8am-5pm) Saturday, Sunday & Holidays (Closed)"),
+                            #(Element:0x3ff6af13eda0 { name = "br" }),
+                            #(Text " \r\n      Visit a "),
+                            #(Element:0x3ff6af126f5c {
+                              name = "a",
+                              attributes = [
+                                #(Attr:0x3ff6af11a48c {
+                                  name = "href",
+                                  value = "http://www.laanimalservices.com/shelters/"
+                                  })],
+                              children = [ #(Text "Shelter")]
+                              }),
+                            #(Text "       \r\n        ")]
+                          }),
+                        #(Text "            \r\n        \r\n        ")]
+                      }),
+                    #(Comment " #end fcol"),
+                    #(Text " \r\n  \r\n      ")]
+                  }),
+                #(Comment " end fwrapper-"),
+                #(Text "\r\n        \r\n\t")]
+              }),
+            #(Comment " #footer "),
+            #(Text "\r\n\r\n")]
+          }),
+        #(Text "\r\n")]
+      }),
+    #(Element:0x3ff6af1d2a28 {
+      name = "html",
+      children = [
+        #(Element:0x3ff6af1cbbec {
+          name = "script",
+          attributes = [ #(Attr:0x3ff6af1cacd8 { name = "type", value = "text/javascript" })],
+          children = [
+            #(CDATA "\r\n\r\n  var _gaq = _gaq || [];\r\n  _gaq.push(['_setAccount', 'UA-12864153-2']);\r\n  _gaq.push(['_trackPageview']);\r\n\r\n  (function() {\r\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\r\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\r\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\r\n  })();\r\n\r\n")]
+          }),
+        #(Text "\r\n\r\n\r\n\r\n")]
+      })]
+  })
+(END)
